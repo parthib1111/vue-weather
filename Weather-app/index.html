@@ -146,7 +146,7 @@
                 }
                 this.weatherData = null;
 
-                axios.get(`http://api.weatherstack.com/current?access_key=3ee548b15fd4865c0eac6a26aff95b94&query=${this.location}`)
+                axios.get(`https://api.weatherstack.com/current?access_key=3ee548b15fd4865c0eac6a26aff95b94&query=${this.location}`)
                 .then( response => {
                     this.weatherData = response.data;
                     console.log(this.weatherData); 
