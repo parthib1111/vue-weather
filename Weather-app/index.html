@@ -138,7 +138,7 @@
         },
         methods:{
             getWeather(){
-                console.log("Come to me")
+                console.log("Came to function");
                 if(this.location == ""){
                     alert("Please enetr location or zip code first");
                     console.error("No location found");
@@ -153,6 +153,8 @@
                 }).catch(error => {
                     console.error(error);
                 });
+
+                this.location = "";
             }
         }
     })
