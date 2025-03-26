@@ -157,15 +157,15 @@
                 this.location = "";
             }
         },
-        mounted() {
-            axios.get(`https://api.weatherstack.com/current?access_key=ba4a32614630fa8d183fe2a65fc57be2&query=kolkata`)
-                .then( response => {
-                    this.weatherData = response.data;
-                    console.log(this.weatherData); 
-                }).catch(error => {
-                    console.error(error);
-                });
-        }
+        //mounted() {
+        //     axios.get(`https://api.weatherstack.com/current?access_key=ba4a32614630fa8d183fe2a65fc57be2&query=kolkata`)
+        //         .then( response => {
+        //             this.weatherData = response.data;
+        //             console.log(this.weatherData); 
+        //         }).catch(error => {
+        //             console.error(error);
+        //         });
+        // }
     })
     app.mount('#app');
 </script>
